@@ -17,7 +17,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #e5e5e5;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Source Sans 3", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
@@ -31,3 +31,142 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+/* MENU */
+
+.menu ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden; 
+
+	display: flex;
+	gap: 30px;
+	margin-left: 50px;
+}
+
+.menu a {
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+.menu a:hover {
+	color: white;
+	background-color: #48418e;
+}
+
+.menu li {
+	float: left;
+}
+
+.appka {
+	font-weight: bold;
+	color: #25133d;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+
+/* BANNER */
+
+.banner {
+	min-height: 450px;
+
+	display: flex;
+	flex-direction: row;
+
+	background-image: url(images/pozadi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+
+h1 {
+	font-size: 90px;
+	font-weight: 400;
+	color: white;
+	margin-block: 40px;
+}
+
+.banner-popis {
+	font-size: 36px;
+	font-weight: 300;
+	color: white;
+	margin: 0;
+}
+
+.foto-telefon {
+	margin-top: 50px;
+	margin-left: 26px;
+}
+
+
+.odkazy {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.odkazy a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+	border: 1px solid white;
+	border-radius: 10px;
+	padding-block: 15px;
+	padding-inline: 30px;
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+
+.odkazy a:hover {
+	background-color: #48418e;
+}
+
+/* OBSAH */
+.obsah {
+	display: flex;
+	flex-direction: row;
+	gap: 45px;
+	margin-inline: 50px;
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+
+.obsah-info {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.foto-obsah {
+	width: 70px;
+}
+
+
+
+h2 {
+	color: #48418e;
+}
+
+/* PATIČKA */ 
+.paticka {
+	background-color: #48418e;
+	padding-block: 10px;
+	text-align: center;
+	color: white;	
+}
+
+.paticka-text {
+	margin: 0;
+}
