@@ -32,141 +32,424 @@ body {
 
 /* ----- zde začni psát vlastní CSS ----- */
 
-/* MENU */
 
-.menu ul {
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden; 
+/* MOBIL */
 
-	display: flex;
-	gap: 30px;
-	margin-left: 50px;
+@media (max-width: 640px) {
+	/* MENU */
+	.menu ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		overflow: hidden; 
+
+		display: flex;
+		gap: 15px;
+		margin-left: 20px;
+	}
+
+	.menu a {
+		text-decoration: none;
+		padding: 15px;
+		display: block;
+		text-align: center;
+	}
+
+	.menu a:hover {
+		color: white;
+		background-color: #48418e;
+	}
+
+	.menu li {
+		float: left;
+	}
+
+	.appka {
+		font-weight: bold;
+		color: #25133d;
+		padding: 15px;
+		display: block;
+		text-align: center;
+	}
+
+	/* BANNER */
+	.banner {
+		min-height: 300px;
+
+		display: flex;
+		flex-direction: row;
+
+		background-image: url(images/pozadi.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.banner-text {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+	}
+
+	h1 {
+		font-size: 45px;
+		font-weight: 400;
+		color: white;
+		margin-block: 20px;
+	}
+
+	.banner-popis {
+		font-size: 30px;
+		font-weight: 300;
+		color: white;
+		margin: 0;
+	}
+
+	.foto-telefon {
+		margin-top: auto;
+		width: 250px;
+		margin-left: auto;
+	}
+
+	.odkazy {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.odkazy a {
+		font-size: 16px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+
+		border: 1px solid white;
+		border-radius: 10px;
+		padding-block: 15px;
+		padding-inline: 30px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.odkazy a:hover {
+		background-color: #48418e;
+	}
+
+	/* OBSAH */
+	.obsah {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		margin-inline: 20px;
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
+
+	.obsah-info {
+		flex-direction: column;
+		display: inline;
+		justify-content: flex-start;
+		text-align: center;
+	}
+
+	.foto-obsah {
+		width: 40px;
+	}
+	
+
+	h2 {
+		font-size: 20px;
+		color: #48418e;
+	}
+
+	/* PATIČKA */ 
+	.paticka {
+		background-color: #48418e;
+		padding-block: 10px;
+		text-align: center;
+		color: white;	
+	}
+
+	.paticka-text {
+		margin: 0;
+	}
 }
 
-.menu a {
-	text-decoration: none;
-	padding: 15px;
-	display: block;
-	text-align: center;
+
+
+/* TABLET */
+@media (min-width: 640px) {
+	/* MENU */
+	.menu ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		overflow: hidden; 
+
+		display: flex;
+		gap: 15px;
+		margin-left: 30px;
+	}
+
+	.menu a {
+		text-decoration: none;
+		padding: 15px;
+		display: block;
+		text-align: center;
+	}
+
+	.menu a:hover {
+		color: white;
+		background-color: #48418e;
+	}
+
+	.menu li {
+		float: left;
+	}
+
+	.appka {
+		font-weight: bold;
+		color: #25133d;
+		padding: 15px;
+		display: block;
+		text-align: center;
+	}
+
+	/* BANNER */
+	.banner {
+		min-height: 400px;
+
+		display: flex;
+		flex-direction: row;
+
+		background-image: url(images/pozadi.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.banner-text {
+		display: flex;
+		flex-direction: column;
+		margin-left: 30px;
+	}
+
+	h1 {
+		font-size: 60px;
+		font-weight: 400;
+		color: white;
+		margin-block: 30px;
+	}
+
+	.banner-popis {
+		font-size: 40px;
+		font-weight: 300;
+		color: white;
+		margin: 0;
+	}
+
+	.foto-telefon {
+		margin-top: auto;
+		width: 300px;
+		margin-left: auto;
+	}
+
+	.odkazy {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.odkazy a {
+		font-size: 20px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+
+		border: 1px solid white;
+		border-radius: 10px;
+		padding-block: 15px;
+		padding-inline: 30px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	.odkazy a:hover {
+		background-color: #48418e;
+	}
+
+	/* OBSAH */
+	.obsah {
+		display: flex;
+		flex-direction: row;
+		gap: 45px;
+		margin-inline: 30px;
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
+
+	.obsah-info {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.foto-obsah {
+		width: 50px;
+	}
+
+	h2 {
+		color: #48418e;
+	}
+
+
+	/* PATIČKA */ 
+	.paticka {
+		background-color: #48418e;
+		padding-block: 10px;
+		text-align: center;
+		color: white;	
+	}
+
+	.paticka-text {
+		margin: 0;
+	}
 }
 
-.menu a:hover {
-	color: white;
-	background-color: #48418e;
-}
-
-.menu li {
-	float: left;
-}
-
-.appka {
-	font-weight: bold;
-	color: #25133d;
-	padding: 15px;
-	display: block;
-	text-align: center;
-}
 
 
-/* BANNER */
+/* POČÍTAČ */ 
+@media (min-width: 1100px) {
+	/* MENU */
+	.menu ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		overflow: hidden; 
 
-.banner {
-	min-height: 450px;
+		display: flex;
+		gap: 30px;
+		margin-left: 50px;
+	}
 
-	display: flex;
-	flex-direction: row;
+	.menu a {
+		text-decoration: none;
+		padding: 15px;
+		display: block;
+		text-align: center;
+	}
 
-	background-image: url(images/pozadi.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
+	.menu a:hover {
+		color: white;
+		background-color: #48418e;
+	}
 
-.banner-text {
-	display: flex;
-	flex-direction: column;
-	margin-left: 50px;
-}
+	.menu li {
+		float: left;
+	}
 
-h1 {
-	font-size: 90px;
-	font-weight: 400;
-	color: white;
-	margin-block: 40px;
-}
+	.appka {
+		font-weight: bold;
+		color: #25133d;
+		padding: 15px;
+		display: block;
+		text-align: center;
+	}
 
-.banner-popis {
-	font-size: 36px;
-	font-weight: 300;
-	color: white;
-	margin: 0;
-}
+	/* BANNER */
+	.banner {
+		min-height: 450px;
 
-.foto-telefon {
-	margin-top: 50px;
-	margin-left: 26px;
-}
+		display: flex;
+		flex-direction: row;
 
+		background-image: url(images/pozadi.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
-.odkazy {
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-}
+	.banner-text {
+		display: flex;
+		flex-direction: column;
+		margin-left: 50px;
+	}
 
-.odkazy a {
-	font-size: 20px;
-	color: white;
-	text-decoration: none;
-	text-align: center;
+	h1 {
+		font-size: 90px;
+		font-weight: 400;
+		color: white;
+		margin-block: 40px;
+	}
 
-	border: 1px solid white;
-	border-radius: 10px;
-	padding-block: 15px;
-	padding-inline: 30px;
-	margin-top: 40px;
-	margin-bottom: 70px;
-}
+	.banner-popis {
+		font-size: 36px;
+		font-weight: 300;
+		color: white;
+		margin: 0;
+	}
 
-.odkazy a:hover {
-	background-color: #48418e;
-}
-
-/* OBSAH */
-.obsah {
-	display: flex;
-	flex-direction: row;
-	gap: 45px;
-	margin-inline: 50px;
-	margin-top: 35px;
-	margin-bottom: 30px;
-}
-
-.obsah-info {
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-.foto-obsah {
-	width: 70px;
-}
+	.foto-telefon {
+		width: 400px;
+		margin-left: 30px;
+	}
 
 
+	.odkazy {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
 
-h2 {
-	color: #48418e;
-}
+	.odkazy a {
+		font-size: 20px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
 
-/* PATIČKA */ 
-.paticka {
-	background-color: #48418e;
-	padding-block: 10px;
-	text-align: center;
-	color: white;	
-}
+		border: 1px solid white;
+		border-radius: 10px;
+		padding-block: 15px;
+		padding-inline: 30px;
+		margin-top: 40px;
+		margin-bottom: 70px;
+	}
 
-.paticka-text {
-	margin: 0;
+	.odkazy a:hover {
+		background-color: #48418e;
+	}
+
+	/* OBSAH */
+	.obsah {
+		display: flex;
+		flex-direction: row;
+		gap: 45px;
+		margin-inline: 50px;
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
+
+	.obsah-info {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.foto-obsah {
+		width: 70px;
+	}
+
+	h2 {
+		color: #48418e;
+	}
+
+	/* PATIČKA */ 
+	.paticka {
+		background-color: #48418e;
+		padding-block: 10px;
+		text-align: center;
+		color: white;	
+	}
+
+	.paticka-text {
+		margin: 0;
+	}
 }
